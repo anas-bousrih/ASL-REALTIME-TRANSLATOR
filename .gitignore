@@ -1,0 +1,5 @@
+.venv/
+.venv-clean/
+__pycache__/
+*.pyc
+outputs/

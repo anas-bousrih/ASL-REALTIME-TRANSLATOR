@@ -1,0 +1,44 @@
+app:
+  default_mode: word
+
+models:
+  word:
+    checkpoint: checkpoints/word/best_v1.pt
+    train_csv: asl_subset_top25/splits/train.csv
+  letter:
+    checkpoint: /abs/path/to/letters.pt
+    train_csv: /abs/path/to/letters_train.csv
+
+runtime:
+  camera: -1
+  backend: any
+  cam_width: 640
+  cam_height: 480
+
+  clip_len: 32
+  infer_every: 2
+  ema: 0.55
+  topk: 5
+
+  threshold: 0.075
+  margin_threshold: 0.006
+
+  vote_window: 5
+  min_votes: 3
+  cooldown: 2
+
+  stuck_window: 10
+  stuck_majority: 8
+  stuck_conf_max: 0.085
+
+  debug_probs: false
+  show_preview: false
+
+  virtual_cam_enabled: true
+  virtual_cam_fps: 20
+  virtual_cam_mirror: true
+
+  llm_enabled: false
+  llm_model: llama3.2:3b
+  llm_interval_sec: 1.5
+  llm_min_tokens: 2

@@ -1,0 +1,18 @@
+{
+  "dataset_dir": "/Users/anasbousrih/Downloads/ASL_Citizen",
+  "output_dir": "/Users/anasbousrih/dev/ASL-Citizen/ASL-citizen-code/asl_subset_top25",
+  "top_n": 25,
+  "selected_glosses": 25,
+  "total_train_glosses": 2731,
+  "rows_per_split": {
+    "train": 497,
+    "val": 97,
+    "test": 384
+  },
+  "files": {
+    "train_csv": "/Users/anasbousrih/dev/ASL-Citizen/ASL-citizen-code/asl_subset_top25/splits/train.csv",
+    "val_csv": "/Users/anasbousrih/dev/ASL-Citizen/ASL-citizen-code/asl_subset_top25/splits/val.csv",
+    "test_csv": "/Users/anasbousrih/dev/ASL-Citizen/ASL-citizen-code/asl_subset_top25/splits/test.csv",
+    "selected_glosses": "/Users/anasbousrih/dev/ASL-Citizen/ASL-citizen-code/asl_subset_top25/selected_glosses.txt"
+  }
+}
